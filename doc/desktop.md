@@ -18,13 +18,28 @@
 # pacman -S xfce4
 ~~~
 
+### ディスプレイマネージャ
+
 起動にはディスプレイマネージャを用いる。`GDM`でも何も問題はないのだが、ざっと調べて`LXDM`にしてみた。
-デフォルトの外観は洗練されていない。
+デフォルトの外観(`Industrial`テーマ)は洗練されていない。
 
 ~~~
 # pacman -S lxdm
 ~~~
 
-デフォルトセッションを明示したければ
+かわりに`yaourt`で導入できる`lxdm-git`には`Arch`向けのテーマが2つ入っている。
+
+~~~
+$ yaourt -S lxdm-git
+~~~
+
+`/etc/lxdm/lxdm.conf`の`theme`を
+
+* ArchStripes
+* ArchDark
+
+に変更できる。(テーマファイル自体は`/usr/share/lxdm/themes`にある)
+
+また、デフォルトセッションを明示したければ
 [LXDM (日本語) - ArchWiki](https://wiki.archlinux.org/index.php/LXDM_(%E6%97%A5%E6%9C%AC%E8%AA%9E))
 を参考に`/etc/lxdm/lxdm.conf`を編集する。今回は特に手を付けていない。
