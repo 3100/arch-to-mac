@@ -13,7 +13,7 @@
 インストールは以下の通り。
 
 ~~~
-#pacman -S fcitx fcitx-configtool, fcitx-mozc
+# pacman -S fcitx fcitx-configtool, fcitx-mozc
 ~~~
 
 尚、`fcitx-configtool`はgtk3ベースのGUI設定ツールなので、環境によっては異なるものを選択すること。
