@@ -33,13 +33,32 @@
 $ yaourt -S lxdm-git
 ~~~
 
-`/etc/lxdm/lxdm.conf`の`theme`を
+`lxdm-git`では`/etc/lxdm/lxdm.conf`の`theme`を
 
 * ArchStripes
 * ArchDark
 
 に変更できる。(テーマファイル自体は`/usr/share/lxdm/themes`にある)
+ついでに見た目をスッキリさせるため、以下の項目も変更した。
 
-また、デフォルトセッションを明示したければ
-[LXDM (日本語) - ArchWiki](https://wiki.archlinux.org/index.php/LXDM_(%E6%97%A5%E6%9C%AC%E8%AA%9E))
-を参考に`/etc/lxdm/lxdm.conf`を編集する。今回は特に手を付けていない。
+~~~
+## if show bottom pane
+bottom_pane=0
+
+## if show language select control
+lang=0
+~~~
+
+いずれの場合も、デフォルトセッションを明示しておく。
+`/etc/lxdm/lxdm.conf`内で以下のように設定する。
+(上の設定をする際に、これを行わないとログインできなくなる)
+
+~~~
+[base]
+session=/usr/bin/startxfce4
+~~~
+
+### ディスプレイマネージャでログインできなくなったら
+
+`CTRL` + `ALT` + `F3`でコンソールログインができる。
+そちらでログインし、原因を調査すると良い。
