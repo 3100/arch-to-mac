@@ -17,14 +17,14 @@ Linuxには`redshift`という`flux`にインスパイアされたツールが�
 
 自動起動したいので、サービスとして登録する。
 
-そのままでは動かなかったので`/usr/lib/systemd/user/redshift.service'に修正を行う。
+そのままでは動かなかったので`/usr/lib/systemd/user/redshift.service`に修正を行う。
 
 ~~~
 [Service]
 Environment=DISPLAY=:0
 ~~~
 
-のように項目を追加。
+のようにServiceの項目に追加。
 
 cf. [[Solved] Redshift fails to run as systemd unit, works in terminal (Page 1) / Newbie Corner / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?pid=1417568)
 
