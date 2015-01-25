@@ -3,18 +3,19 @@
 
 ## 導入
 
-* install.md
+* [OSインストール](install.md)
 
 ## インストール後の設定
 
-* wifi.md
-* desktop.md
-* ime.md
+* [Yaourt(非公式パッケージマネージャ)の導入](yaourt.md)
+* [WiFiの設定](wifi.md)
+* [デスクトップ環境の構築](desktop.md)
+* [日本語入力の設定](ime.md)
 
 ## 便利ツール
 
-* flux.md
+* [ブルーライト対策(f.lux的なやつ)](flux.md)
 
 ## その他
 
-* tips.md
+* [細々とした改善](tips.md)
