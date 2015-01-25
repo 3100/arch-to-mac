@@ -18,6 +18,7 @@ WiFiの設定
 ~~~
 # systemctl enable netctl-auto@wlp2s0b1
 ~~~
+`wlp2s0b1`の部分は環境依存なので`ip link`などで確かめておくこと。(以下、読み替え)
 
 DHCPを利用する場合
 
